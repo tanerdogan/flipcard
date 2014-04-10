@@ -62,5 +62,9 @@ $(function() {
         this.value = this.value.replace(/[^0-9\.]/g,'');
         cardCvc.html(this.value);
     });
+
+    $.each([cvc, expMmYy, coCard, coName], function(index, val) {
+        val.trigger("keyup");
+    });
 });
 
