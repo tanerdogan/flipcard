@@ -84,11 +84,21 @@
 	font-size: 1.2em;
 }
 
+#fc-cardName:empty:after {
+	color: #ccc;
+	content: "YOUR NAME";
+}
+
 #fc-cardNumber{
 	position: absolute;
 	top: 100px;
 	left: 10px;
 	font-size: 1.65em;
+}
+
+#fc-cardNumber:empty:after {
+	color: #ccc;
+	content: "1111 1111 1111 1111";
 }
 
 #fc-cardExp{
@@ -98,11 +108,21 @@
 	font-size: 1em;
 }
 
+#fc-cardExp:empty:after {
+	color: #ccc;
+	content: "MM/YY";
+}
+
 #fc-cardCvc{
 	position: absolute;
 	top: 65px;
 	left: 145px;
 	font-size: 1em;
+}
+
+#fc-cardCvc:empty:after {
+	color: #ccc;
+	content: "CVC";
 }
 
 #fc-cardImg{
