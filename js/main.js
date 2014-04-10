@@ -35,10 +35,10 @@ $(function() {
         maestro.test(card) ? cardImg.css("background-position-x", "-153px") : false;
         discover.test(card) ? cardImg.css("background-position-x", "-204px") : false;
         
-        isMatch = card.match(new RegExp('.{1,4}', 'g')).join(" ");
+        isMatch = card.match(new RegExp('.{1,4}', 'g'));
         
         if (isMatch) {
-            cardNum.html();
+            cardNum.html(isMatch.join(" "));
         }
 
     });
