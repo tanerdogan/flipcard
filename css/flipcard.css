@@ -1,11 +1,11 @@
-	.flip-container {
+	#fc-flipContainer {
 		-webkit-perspective: 1000;
 		-moz-perspective: 1000;
 		-o-perspective: 1000;
 		perspective: 1000;
 	}
 
-	.flip-container, .front, .back {
+	#fc-flipContainer, .front, .back {
 		padding: 10px 0;
 		width: 271px;
 		height: 170px;
@@ -77,35 +77,35 @@
 	}
 
 
-.card-name{
+#fc-cardName{
 	position: absolute;
 	top: 145px;
 	left: 12px;
 	font-size: 1.2em;
 }
 
-.card-number{
+#fc-cardNumber{
 	position: absolute;
 	top: 100px;
 	left: 10px;
 	font-size: 1.65em;
 }
 
-.card-exp{
+#fc-cardExp{
 	position: absolute;
 	top: 122px;
 	left: 140px;
 	font-size: 1em;
 }
 
-.card-cvc{
+#fc-cardCvc{
 	position: absolute;
 	top: 65px;
 	left: 145px;
 	font-size: 1em;
 }
 
-.card-img{
+#fc-cardImg{
 	position: absolute;
 	width: 51px;
 	height: 32px;

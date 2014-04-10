@@ -156,17 +156,17 @@ table {
  	line-height: 30px;
  }
 
- .checkout-name {
+ #fc-checkoutName {
  	width: 150px;
  }
 
- .checkout-card {
+ #fc-cardName {
  	width: 210px;
  }
 
- .checkout-exp-mm,
- .checkout-exp-yy,
- .checkout-cvc {
+ #fc-checkoutExpMm,
+ #fc-checkoutExpYy,
+ #fc-checkoutCvc {
  	margin-left: 15px;
  	width: 45px;
  }
@@ -190,6 +190,7 @@ table {
  	-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
  	box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
  }
+
  .checkout-btn:active {
  	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
  	border-color: #075bba #0c69d2 #0f7de9;
