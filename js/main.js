@@ -14,6 +14,7 @@ $(function() {
         flip = $("#fc-flipContainer", wrapper),
         cardCvc = $("#fc-cardCvc", wrapper),
         card, 
+        isMatch,
         visa = /^4/,
         visa_electron = /^(4026|417500|4508|4844|491(3|7))/,
         mastercard = /^5[1-5]/,
@@ -32,9 +33,13 @@ $(function() {
         visa_electron.test(card) ? cardImg.css("background-position-x", "-51px") : false;
         mastercard.test(card) ? cardImg.css("background-position-x", "-102px") : false;
         maestro.test(card) ? cardImg.css("background-position-x", "-153px") : false;
-        discover.test(card) ? $(".card-img").css("background-position-x", "-204px") : false;
-
-        cardNum.html(card.match(new RegExp('.{1,4}', 'g')).join(" "));
+        discover.test(card) ? cardImg.css("background-position-x", "-204px") : false;
+        
+        isMatch = card.match(new RegExp('.{1,4}', 'g')).join(" ");
+        
+        if (isMatch) {
+            cardNum.html();
+        }
 
     });
 
