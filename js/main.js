@@ -19,7 +19,18 @@ $(function() {
         visa_electron = /^(4026|417500|4508|4844|491(3|7))/,
         mastercard = /^5[1-5]/,
         maestro = /^(5018|5020|5038|6304|6759|676[1-3])/,
-        discover = /^(6011|622(12[6-9]|1[3-9][0-9]|[2-8][0-9]{2}|9[0-1][0-9]|92[0-5]|64[4-9])|65)/;
+        discover = /^(6011|622(12[6-9]|1[3-9][0-9]|[2-8][0-9]{2}|9[0-1][0-9]|92[0-5]|64[4-9])|65)/,
+        
+        testBrandLogo = function () {
+            
+            (card === '') ? cardImg.css("background-position", "-300px") : false;
+
+            visa.test(card) ? cardImg.css("background-position", "0px") : false;
+            visa_electron.test(card) ? cardImg.css("background-position", "-51px") : false;
+            mastercard.test(card) ? cardImg.css("background-position", "-102px") : false;
+            maestro.test(card) ? cardImg.css("background-position", "-153px") : false;
+            discover.test(card) ? cardImg.css("background-position", "-204px") : false;
+        };
 
     coName.on("keyup", function() {
         cardName.html(this.value);
@@ -28,13 +39,7 @@ $(function() {
    coCard.on("keyup", function(key){
         this.value = this.value.replace(/[^0-9\.]/g,'');
         card = $(this).val();
-
-        visa.test(card) ? cardImg.css("background-position", "0px") : false;
-        visa_electron.test(card) ? cardImg.css("background-position", "-51px") : false;
-        mastercard.test(card) ? cardImg.css("background-position", "-102px") : false;
-        maestro.test(card) ? cardImg.css("background-position", "-153px") : false;
-        discover.test(card) ? cardImg.css("background-position", "-204px") : false;
-        
+        testBrandLogo();       
         isMatch = card.match(new RegExp('.{1,4}', 'g'));
         
         if (isMatch) {
