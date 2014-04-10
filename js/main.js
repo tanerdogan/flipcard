@@ -49,7 +49,12 @@ $(function() {
 
     expMmYy.on("keyup", function(){
         this.value = this.value.replace(/[^0-9\.]/g,'');
-        exp.html(expMm.val() +"/" + expYy.val());
+        if (expMm.val() !== '' || expYy.val() !== '') {
+            exp.html(expMm.val() +"/" + expYy.val());
+        }
+        else {
+            exp.html('');
+        }
     });
 
     cvc.on("focus", function(){
