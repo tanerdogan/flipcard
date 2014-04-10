@@ -12,7 +12,7 @@ $(function() {
         exp = $("#fc-cardExp", wrapper),
         cvc = $("#fc-checkoutCvc", wrapper),
         flip = $("#fc-flipContainer", wrapper),
-        cardCvc = $("#flip-cardCvc", wrapper),
+        cardCvc = $("#fc-cardCvc", wrapper),
         card, 
         visa = /^4/,
         visa_electron = /^(4026|417500|4508|4844|491(3|7))/,
