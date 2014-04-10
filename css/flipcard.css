@@ -1,0 +1,115 @@
+	.flip-container {
+		-webkit-perspective: 1000;
+		-moz-perspective: 1000;
+		-o-perspective: 1000;
+		perspective: 1000;
+	}
+
+	.flip-container, .front, .back {
+		padding: 10px 0;
+		width: 271px;
+		height: 170px;
+		color: #222;
+		font-weight: bold;
+		font-family:  monospace;
+	}
+
+	.flipper {
+		-moz-transform: perspective(1000px);
+		-moz-transform-style: preserve-3d;
+
+		position: relative;
+	}
+
+	.front, .back {
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		backface-visibility: hidden;
+
+		-webkit-transition: 0.4s;
+		-webkit-transform-style: preserve-3d;
+
+		-moz-transition: 0.4s;
+		-moz-transform-style: preserve-3d;
+
+		-o-transition: 0.4s;
+		-o-transform-style: preserve-3d;
+
+		-ms-transition: 0.4s;
+		-ms-transform-style: preserve-3d;
+
+		transition: 0.4s;
+		transform-style: preserve-3d;
+
+
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.back {
+		-webkit-transform: rotateY(-180deg);
+		-moz-transform: rotateY(-180deg);
+		-o-transform: rotateY(-180deg);
+		-ms-transform: rotateY(-180deg);
+		transform: rotateY(-180deg);
+	}
+
+	.flip-container:hover .back, .flip-container.hover .back {
+		-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+
+	.flip-container:hover .front, .flip-container.hover .front {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+
+	.front {
+		z-index: 2;
+	}
+
+
+.card-name{
+	position: absolute;
+	top: 145px;
+	left: 12px;
+	font-size: 1.2em;
+}
+
+.card-number{
+	position: absolute;
+	top: 100px;
+	left: 10px;
+	font-size: 1.65em;
+}
+
+.card-exp{
+	position: absolute;
+	top: 122px;
+	left: 140px;
+	font-size: 1em;
+}
+
+.card-cvc{
+	position: absolute;
+	top: 65px;
+	left: 145px;
+	font-size: 1em;
+}
+
+.card-img{
+	position: absolute;
+	width: 51px;
+	height: 32px;
+	background: url(../images/card_logos.png) 0px 0px;
+	top: 55px;
+	left: 210px;
+}
