@@ -29,11 +29,11 @@ $(function() {
         this.value = this.value.replace(/[^0-9\.]/g,'');
         card = $(this).val();
 
-        visa.test(card) ? cardImg.css("background-position-x", "0px") : false;
-        visa_electron.test(card) ? cardImg.css("background-position-x", "-51px") : false;
-        mastercard.test(card) ? cardImg.css("background-position-x", "-102px") : false;
-        maestro.test(card) ? cardImg.css("background-position-x", "-153px") : false;
-        discover.test(card) ? cardImg.css("background-position-x", "-204px") : false;
+        visa.test(card) ? cardImg.css("background-position", "0px") : false;
+        visa_electron.test(card) ? cardImg.css("background-position", "-51px") : false;
+        mastercard.test(card) ? cardImg.css("background-position", "-102px") : false;
+        maestro.test(card) ? cardImg.css("background-position", "-153px") : false;
+        discover.test(card) ? cardImg.css("background-position", "-204px") : false;
         
         isMatch = card.match(new RegExp('.{1,4}', 'g'));
         
