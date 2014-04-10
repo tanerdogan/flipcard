@@ -77,59 +77,60 @@
 	}
 
 
-#fc-cardName{
-	position: absolute;
-	top: 145px;
-	left: 12px;
-	font-size: 1.2em;
-}
+	#fc-cardName{
+		position: absolute;
+		top: 145px;
+		left: 12px;
+		font-size: 1.2em;
+	}
 
-#fc-cardName:empty:after {
-	color: #ccc;
-	content: "YOUR NAME";
-}
+	#fc-cardName:empty:after {
+		color: #ccc;
+		content: "YOUR NAME";
+	}
 
-#fc-cardNumber{
-	position: absolute;
-	top: 100px;
-	left: 10px;
-	font-size: 1.65em;
-}
+	#fc-cardNumber{
+		position: absolute;
+		top: 100px;
+		left: 10px;
+		font-size: 1.65em;
+	}
 
-#fc-cardNumber:empty:after {
-	color: #ccc;
-	content: "1111 1111 1111 1111";
-}
+	#fc-cardNumber:empty:after {
+		color: #ccc;
+		content: "1111 1111 1111 1111";
+	}
 
-#fc-cardExp{
-	position: absolute;
-	top: 122px;
-	left: 140px;
-	font-size: 1em;
-}
+	#fc-cardExp{
+		position: absolute;
+		top: 122px;
+		left: 140px;
+		font-size: 1em;
+	}
 
-#fc-cardExp:empty:after {
-	color: #ccc;
-	content: "MM/YY";
-}
+	#fc-cardExp:empty:after {
+		color: #ccc;
+		content: "MM/YY";
+	}
 
-#fc-cardCvc{
-	position: absolute;
-	top: 65px;
-	left: 145px;
-	font-size: 1em;
-}
+	#fc-cardCvc{
+		position: absolute;
+		top: 65px;
+		left: 145px;
+		font-size: 1em;
+	}
 
-#fc-cardCvc:empty:after {
-	color: #ccc;
-	content: "CVC";
-}
+	#fc-cardCvc:empty:after {
+		color: #ccc;
+		content: "CVC";
+	}
 
-#fc-cardImg{
-	position: absolute;
-	width: 51px;
-	height: 32px;
-	background: url(../images/card_logos.png) 0px 0px;
-	top: 55px;
-	left: 210px;
-}
+	#fc-cardImg{
+		position: absolute;
+		width: 51px;
+		height: 32px;
+		background: url(../images/card_logos.png);
+		background-repeat:no-repeat;
+		top: 55px;
+		left: 210px;
+	}
