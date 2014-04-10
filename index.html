@@ -19,30 +19,30 @@
                 </h1>
             </div>
             <p>
-                <input type="text" class="checkout-input checkout-name" maxlength="23" placeholder="Your name" autofocus>
-                <input type="text" class="checkout-input checkout-exp-mm" maxlength="2" placeholder="MM">
-                <input type="text" class="checkout-input checkout-exp-yy" maxlength="2" placeholder="YY">
+                <input type="text" class="checkout-input" id="fc-checkoutName" maxlength="23" placeholder="Your name" autofocus>
+                <input type="text" class="checkout-input" id="fc-checkoutExpMm" maxlength="2" placeholder="MM">
+                <input type="text" class="checkout-input" id="fc-checkoutExpYy" maxlength="2" placeholder="YY">
             </p>
             <p>
-                <input type="text" class="checkout-input checkout-card" maxlength="16" placeholder="4111 1111 1111 1111">
-                <input type="text" class="checkout-input checkout-cvc" maxlength="3" placeholder="CVC">
+                <input type="text" class="checkout-input" id="fc-checkoutCard" maxlength="16" placeholder="4111 1111 1111 1111">
+                <input type="text" class="checkout-input" id="fc-checkoutCvc" maxlength="3" placeholder="CVC">
             </p>
             <p>
                 <input type="submit" value="Purchase" class="checkout-btn">
             </p>
 
-            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div id="fc-flipContainer" ontouchstart="this.classList.toggle('hover');">
                 <div class="flipper">
                     <div class="front">
                         <img src="images/card.jpg" alt="">
-                        <div class="card-name"></div>
-                        <div class="card-number"></div>
-                        <div class="card-exp"></div>
-                        <div class="card-img"></div>
+                        <div id="fc-cardName"></div>
+                        <div id="fc-cardNumber"></div>
+                        <div id="fc-cardExp"></div>
+                        <div id="fc-cardImg"></div>
                     </div>
                     <div class="back">
                         <img src="images/cardback.jpg" alt="">
-                        <div class="card-cvc"></div>
+                        <div id="fc-cardCvc"></div>
                     </div>
                 </div>
             </div>
