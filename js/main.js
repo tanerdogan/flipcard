@@ -4,7 +4,7 @@ $(function() {
         coName = $("#fc-checkoutName", wrapper),
         cardName = $("#fc-cardName", wrapper),
         coCard = $("#fc-checkoutCard", wrapper),
-        cardImg = $('#fc-cardImage', wrapper),
+        cardImg = $('#fc-cardImg', wrapper),
         cardNum = $("#fc-cardNumber", wrapper),
         expMmYy = $("#fc-checkoutExpMm, #fc-checkoutExpYy", wrapper),
         expMm = $("#fc-checkoutExpMm", wrapper),
@@ -39,6 +39,10 @@ $(function() {
         
         if (isMatch) {
             cardNum.html(isMatch.join(" "));
+        }
+        
+        if (this.value.trim() === '') {
+            cardNum.html('');
         }
 
     });
