@@ -1,5 +1,5 @@
 $(function() {
-    
+
     var wrapper = $('#flipcard'),
         coName = $("#fc-checkoutName", wrapper),
         cardName = $("#fc-cardName", wrapper),
@@ -13,16 +13,16 @@ $(function() {
         cvc = $("#fc-checkoutCvc", wrapper),
         flip = $("#fc-flipContainer", wrapper),
         cardCvc = $("#fc-cardCvc", wrapper),
-        card, 
+        card,
         isMatch,
         visa = /^4/,
         visa_electron = /^(4026|417500|4508|4844|491(3|7))/,
         mastercard = /^5[1-5]/,
         maestro = /^(5018|5020|5038|6304|6759|676[1-3])/,
         discover = /^(6011|622(12[6-9]|1[3-9][0-9]|[2-8][0-9]{2}|9[0-1][0-9]|92[0-5]|64[4-9])|65)/,
-        
+
         testBrandLogo = function () {
-            
+
             (card === '') ? cardImg.css("background-position", "-300px") : false;
 
             visa.test(card) ? cardImg.css("background-position", "0px") : false;
@@ -39,13 +39,13 @@ $(function() {
    coCard.on("keyup", function(key){
         this.value = this.value.replace(/[^0-9\.]/g,'');
         card = $(this).val();
-        testBrandLogo();       
+        testBrandLogo();
         isMatch = card.match(new RegExp('.{1,4}', 'g'));
-        
+
         if (isMatch) {
             cardNum.html(isMatch.join(" "));
         }
-        
+
         if (this.value.trim() === '') {
             cardNum.html('');
         }
