@@ -1,4 +1,4 @@
-Welcome to flipCard!	{#welcome}
+Welcome to flipCard!
 =====================
 
 flipCard is a simple, clean, professional checkout form for any kind of online payment web sites like e-commerce, donations, online services.
